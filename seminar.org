@@ -454,6 +454,7 @@ set(gcf,'PaperPositionMode','auto')
  - pull out both time and frequency content
  - instead of computinf FT of entire signal we devide into several sections and compute FT of each section
  - Mathamaticaly we can write
+** Gabor transform
  - \[ G(f(t)) = \int_{-\infty}^{\infty} f(\tau)e^{-i \omega \tau} g(\tau - t) d \tau \]
  - g is the window function it can be gaussian or rectangular
  - We can't know what frequency exist at what time instead but we can know what frequency band exist at what time 

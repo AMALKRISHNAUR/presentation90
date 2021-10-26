@@ -27,11 +27,11 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">Amalkrishnaur</h2><p class="date">Created: 2021-10-26 Tue 13:37</p>
+<section id="sec-title-slide"><h2 class="author">Amalkrishnaur</h2><p class="date">Created: 2021-10-26 Tue 13:21</p>
 </section>
 <section>
-<section id="slide-org4cc2413">
-<h2 id="org4cc2413">Why we need Transform</h2>
+<section id="slide-org6dbe6b2">
+<h2 id="org6dbe6b2">Why we need Transform</h2>
 <ul>
 <li>Mathematical transformations are applied to signals to obtain further information
 from that signal that is not readily available in the raw signal. There are number of
@@ -41,8 +41,8 @@ transformations that can be applied to signals.</li>
 </section>
 </section>
 <section>
-<section id="slide-org487bc51">
-<h2 id="org487bc51">Fourier Transform</h2>
+<section id="slide-org6e6288a">
+<h2 id="org6e6288a">Fourier Transform</h2>
 <ul>
 <li>Fourier transform is defined as the sum of over all time of the signal f(t) multiplied
 by a complex exponential [ a complex exponential can be broken down into real
@@ -52,8 +52,8 @@ Coefficients F(ω), which when multiplied by a sinusoid of appropriate frequency
 
 </ul>
 </section>
-<section id="slide-orgfba9300">
-<h3 id="orgfba9300">FT</h3>
+<section id="slide-org6bd0d82">
+<h3 id="org6bd0d82">FT</h3>
 <ul>
 <li>\[ f(x) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega)e^{j\omega x} dx \]</li>
 <li>\[ F(\omega) = \int_{-\infty}^{\infty} f(x)e^{-j\omega x} d\omega \]</li>
@@ -63,8 +63,8 @@ Coefficients F(ω), which when multiplied by a sinusoid of appropriate frequency
 </section>
 </section>
 <section>
-<section id="slide-org1d98e4f">
-<h2 id="org1d98e4f">What are stationary and non stationary signals?</h2>
+<section id="slide-org1992c3e">
+<h2 id="org1992c3e">What are stationary and non stationary signals?</h2>
 <ul>
 <li>Signals whose frequency content that do not change with time are called as stationary
 signals . In other words, the frequency content of stationary signals do not change
@@ -73,8 +73,8 @@ components exist , since all frequency components exist at all times !!! .</li>
 
 </ul>
 </section>
-<section id="slide-org73bbee8">
-<h3 id="org73bbee8">Example</h3>
+<section id="slide-orga204c79">
+<h3 id="orga204c79">Example</h3>
 <ul>
 <li>For example the following signal is a stationary signal, because it has frequencies
 of 10, 25 and 50 Hz at any given time instant. This signal is plotted below:
@@ -82,23 +82,23 @@ x(t)=cos(2*pi*5*t)+cos(2*pi*25*t)+cos(2*pi*50*t )</li>
 
 </ul>
 </section>
-<section id="slide-orgea6e537">
-<h3 id="orgea6e537">Spectrum of that signal</h3>
+<section id="slide-orgee01990">
+<h3 id="orgee01990">Spectrum of that signal</h3>
 
 <div class="figure">
 <p><img src="./if.png" alt="if.png" />
 </p>
 </div>
 </section>
-<section id="slide-orgb54cc4e">
-<h3 id="orgb54cc4e">Non stationary signal</h3>
+<section id="slide-orgcd5c29c">
+<h3 id="orgcd5c29c">Non stationary signal</h3>
 <ul>
 <li>x<sub>5</sub>(t) = [x<sub>1</sub> \(\bigoplus\) x<sub>2</sub> \(\bigoplus\) x<sub>3</sub> ]</li>
 
 </ul>
 </section>
-<section id="slide-orgadb4e39">
-<h3 id="orgadb4e39">Spectrum ofthat signals</h3>
+<section id="slide-org58f12a9">
+<h3 id="org58f12a9">Spectrum ofthat signals</h3>
 
 <div class="figure">
 <p><img src="./si.png" alt="si.png" />
@@ -107,21 +107,21 @@ x(t)=cos(2*pi*5*t)+cos(2*pi*25*t)+cos(2*pi*50*t )</li>
 </section>
 </section>
 <section>
-<section id="slide-org9aff5f0">
-<h2 id="org9aff5f0">STFT Transform</h2>
-<div class="outline-text-2" id="text-org9aff5f0">
+<section id="slide-orgec6ae71">
+<h2 id="orgec6ae71">STFT Transform</h2>
+<div class="outline-text-2" id="text-orgec6ae71">
 </div>
 </section>
-<section id="slide-org4c74722">
-<h3 id="org4c74722">STFT</h3>
+<section id="slide-org4debf76">
+<h3 id="org4debf76">STFT</h3>
 <ul>
 <li>it solve the problem of FT</li>
 <li>Gabor Transfom allow us to compute spectrogram a time frequency plot</li>
 
 </ul>
 </section>
-<section id="slide-org0fd7988">
-<h3 id="org0fd7988">STFT</h3>
+<section id="slide-org431a6a9">
+<h3 id="org431a6a9">STFT</h3>
 <ul>
 <li>A non stationary signal appears to be stationary for small durations. In STFT, the
  signal is divided into small enough segments, where these segments (portions) of
@@ -138,8 +138,8 @@ Mathematically STFT can be represented by,</li>
 </ul>
 
 </section>
-<section id="slide-org96f0180">
-<h3 id="org96f0180">STFT</h3>
+<section id="slide-org4cc586c">
+<h3 id="org4cc586c">STFT</h3>
 <ul>
 <li>\[ STFT(f(t)) = \int_{-\infty}^{\infty} f(\tau)e^{-i \omega \tau} W(\tau - t) d \tau \]</li>
 <li>W is the window function it can be gaussian or rectangular</li>
@@ -147,16 +147,16 @@ Mathematically STFT can be represented by,</li>
 
 </ul>
 </section>
-<section id="slide-org89ac2fc">
-<h3 id="org89ac2fc">picture</h3>
+<section id="slide-orgc513490">
+<h3 id="orgc513490">picture</h3>
 <ul>
 <li>gabor grid</li>
 <li><img src="./gid.png" alt="gid.png" /></li>
 
 </ul>
 </section>
-<section id="slide-org2670dcb">
-<h3 id="org2670dcb">Uncertainty Principe</h3>
+<section id="slide-orga61d3dc">
+<h3 id="orga61d3dc">Uncertainty Principe</h3>
 <ul>
 <li>Uncertainity principle</li>
 <li>It statesthat when you narrow the window you get better time resolution but you get poor frequency resolution</li>
@@ -166,16 +166,16 @@ Mathematically STFT can be represented by,</li>
 
 </ul>
 </section>
-<section id="slide-org9dd133b">
-<h3 id="org9dd133b">Uncertainity principle</h3>
+<section id="slide-orgb43f4fa">
+<h3 id="orgb43f4fa">Uncertainity principle</h3>
 
 <div class="figure">
 <p><img src="./gft.jpg" alt="gft.jpg" />
 </p>
 </div>
 </section>
-<section id="slide-org253e3ca">
-<h3 id="org253e3ca">Idea</h3>
+<section id="slide-org9cd97df">
+<h3 id="org9cd97df">Idea</h3>
 
 <div class="figure">
 <p><img src="./gabor.png" alt="gabor.png" />
@@ -184,8 +184,8 @@ Mathematically STFT can be represented by,</li>
 </section>
 </section>
 <section>
-<section id="slide-org24c4b50">
-<h2 id="org24c4b50">Wavelet Transform</h2>
+<section id="slide-org31d362d">
+<h2 id="org31d362d">Wavelet Transform</h2>
 <ul>
 <li>Wavelet Transform overcomes the preset resolution problem of the STFT by using
 a variable length window.</li>
@@ -201,8 +201,8 @@ resolution</li>
 
 </ul>
 </section>
-<section id="slide-org4fb1ff0">
-<h3 id="org4fb1ff0">Mother Wavelet</h3>
+<section id="slide-orgb68d5f2">
+<h3 id="orgb68d5f2">Mother Wavelet</h3>
 <ul>
 <li>The term wavelet means a small wave. The smallness refers to the condition that
 this (window) function is of finite length (compactly supported)</li>
@@ -215,13 +215,13 @@ functions.</li>
 
 </ul>
 </section>
-<section id="slide-org26a76e0">
-<h3 id="org26a76e0">Properties of wavelets</h3>
-<div class="outline-text-3" id="text-org26a76e0">
+<section id="slide-org2211773">
+<h3 id="org2211773">Properties of wavelets</h3>
+<div class="outline-text-3" id="text-org2211773">
 </div>
 </section>
-<section id="slide-orgd42c96d">
-<h4 id="orgd42c96d">Scaling</h4>
+<section id="slide-org0f22a1c">
+<h4 id="org0f22a1c">Scaling</h4>
 <ul>
 <li>Scale is a frequency parameter which is defined as 1/frequency.</li>
 <li>low frequencies (high scales) correspond to a global information of a
@@ -233,8 +233,8 @@ low frequency content in a signal means smoothly varying part of the signal.</li
 
 </ul>
 </section>
-<section id="slide-org1bbb4b4">
-<h4 id="org1bbb4b4">Translation</h4>
+<section id="slide-org4796111">
+<h4 id="org4796111">Translation</h4>
 <ul>
 <li>The term translation is related to the location of the window, as the window is
 shifted through the signal. This term, obviously, corresponds to time information
@@ -242,8 +242,8 @@ in the transform domain.</li>
 
 </ul>
 </section>
-<section id="slide-orgb5114b5">
-<h3 id="orgb5114b5">CWT</h3>
+<section id="slide-org39228ba">
+<h3 id="org39228ba">CWT</h3>
 <ul>
 <li>Now we have basis function to calculate coefficient only we need to project the function into basis.</li>
 <li>The  wavelet transform coefficients are calculated by
@@ -254,16 +254,16 @@ an inner-product of the input signal with a set of orthonormal basis functions</
 
 </ul>
 </section>
-<section id="slide-org7cf9679">
-<h3 id="org7cf9679">CWT</h3>
+<section id="slide-orgdddf3e6">
+<h3 id="orgdddf3e6">CWT</h3>
 
 <div class="figure">
 <p><img src="./cwt.gif" alt="cwt.gif" />
 </p>
 </div>
 </section>
-<section id="slide-orgd2cd538">
-<h3 id="orgd2cd538">CWT plot</h3>
+<section id="slide-orga9bc556">
+<h3 id="orga9bc556">CWT plot</h3>
 
 <div class="figure">
 <p><img src="./cwtc.png" alt="cwtc.png" />
@@ -272,8 +272,8 @@ an inner-product of the input signal with a set of orthonormal basis functions</
 </section>
 </section>
 <section>
-<section id="slide-org730fc68">
-<h2 id="org730fc68">Uses of wavelet transform</h2>
+<section id="slide-org8bf6ea5">
+<h2 id="org8bf6ea5">Uses of wavelet transform</h2>
 <ul>
 <li>Used in image compression (jpeg 2000)</li>
 <li>image denoising</li>
@@ -283,8 +283,8 @@ an inner-product of the input signal with a set of orthonormal basis functions</
 </section>
 </section>
 <section>
-<section id="slide-orgc1e0b50">
-<h2 id="orgc1e0b50">Conclusion</h2>
+<section id="slide-org9ec73a8">
+<h2 id="org9ec73a8">Conclusion</h2>
 <ul>
 <li>The wavelet transform are very useful and powerful to analyse the signals</li>
 <li>it can detect discontinuity and it is best choise for function which has jumps</li>
